@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>php level1</title>
+</head>
+<body>
 <?php
 //Домашнее задание к уроку 2
 
@@ -57,6 +64,27 @@ function welcomeMessage($time, $lang) {
 
   ?>
 
-<h1><?=welcomeMessage($time)?></h1>
+<h1><?=welcomeMessage($time, $lang)?></h1>
 
+<br>
+<br>
+<?php
 
+/**
+ * Функциz, которая выводит все целые числа
+ */
+function recursion($a, $b)
+{
+    if ($a > $b) {
+        recursion($a, $b + 1);
+    }
+
+    echo $b;
+
+}
+
+recursion(9, 0);
+?>
+
+</body>
+</html>
